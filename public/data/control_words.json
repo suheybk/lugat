@@ -1,0 +1,361 @@
+{
+ "_aciklama": "50 kontrol kelimesi (tefsir/hadis odaklı), 4 zorluk seviyesi. Her seviye arama motorunun farklı bir yönünü sınar. 'kuran': kelimenin Kur'an'da geçmesi beklenir mi. 'amac': bu kelime neyi test ediyor.",
+ "seviyeler": {
+  "kolay": "Sık geçen, sağlam üç harfli kök; tek anlamlı arama. Bütün bloklar dolu gelmeli.",
+  "orta": "Zayıf harfli (illetli) kök, ta merbûta, elif maksûre veya hemze; normalizasyon doğru çalışmalı.",
+  "zor": "Mezîd bab (if'âl, istif'âl, iftiâl...), ıstılah anlamı lügat anlamından ayrılan kavramlar.",
+  "cok_zor": "Garîbü'l-Kur'an: nadir, tek geçişli veya müfessirlerin ihtilaf ettiği kelimeler; muzaaf ve hemzeli kökler."
+ },
+ "kelimeler": [
+  {
+   "seviye": "kolay",
+   "kelime": "كِتَاب",
+   "kok": "كتب",
+   "kuran": true,
+   "amac": "Temel kök; ism, fiil, mastar türevleri"
+  },
+  {
+   "seviye": "kolay",
+   "kelime": "عِلْم",
+   "kok": "علم",
+   "kuran": true,
+   "amac": "Çok türevli kök (âlim, ma'lûm, ta'lîm)"
+  },
+  {
+   "seviye": "kolay",
+   "kelime": "قَرَأَ",
+   "kok": "قرأ",
+   "kuran": true,
+   "amac": "Son harfi hemze (mehmûzü'l-lâm)"
+  },
+  {
+   "seviye": "kolay",
+   "kelime": "رَحْمَة",
+   "kok": "رحم",
+   "kuran": true,
+   "amac": "Ta merbûta + Besmele'deki türevler"
+  },
+  {
+   "seviye": "kolay",
+   "kelime": "صَبْر",
+   "kok": "صبر",
+   "kuran": true,
+   "amac": "Sağlam kök, ahlâk kavramı"
+  },
+  {
+   "seviye": "kolay",
+   "kelime": "دِين",
+   "kok": "دين",
+   "kuran": true,
+   "amac": "Ortası ye (ecvef); lügat/ıstılah farkı"
+  },
+  {
+   "seviye": "kolay",
+   "kelime": "قَلْب",
+   "kok": "قلب",
+   "kuran": true,
+   "amac": "Somut + mecazi anlam"
+  },
+  {
+   "seviye": "kolay",
+   "kelime": "نُور",
+   "kok": "نور",
+   "kuran": true,
+   "amac": "Ortası vav (ecvef)"
+  },
+  {
+   "seviye": "kolay",
+   "kelime": "حَقّ",
+   "kok": "حقق",
+   "kuran": true,
+   "amac": "Şeddeli kelime → muzaaf kök"
+  },
+  {
+   "seviye": "kolay",
+   "kelime": "سَلَام",
+   "kok": "سلم",
+   "kuran": true,
+   "amac": "İslâm, müslim, selâm aynı kökte"
+  },
+  {
+   "seviye": "kolay",
+   "kelime": "شُكْر",
+   "kok": "شكر",
+   "kuran": true,
+   "amac": "Sağlam kök, zıt anlam (küfr) testi"
+  },
+  {
+   "seviye": "kolay",
+   "kelime": "عِبَادَة",
+   "kok": "عبد",
+   "kuran": true,
+   "amac": "Abd, ibâdet, ma'bûd türevleri"
+  },
+  {
+   "seviye": "kolay",
+   "kelime": "ذِكْر",
+   "kok": "ذكر",
+   "kuran": true,
+   "amac": "Sağlam kök, çok geçişli"
+  },
+  {
+   "seviye": "orta",
+   "kelime": "هُدًى",
+   "kok": "هدي",
+   "kuran": true,
+   "amac": "Elif maksûre + tenvin; nâkıs kök"
+  },
+  {
+   "seviye": "orta",
+   "kelime": "تَقْوَى",
+   "kok": "وقي",
+   "kuran": true,
+   "amac": "Lefîf-i mefrûk kök; ت harfi kökte değil"
+  },
+  {
+   "seviye": "orta",
+   "kelime": "صَلَاة",
+   "kok": "صلو",
+   "kuran": true,
+   "amac": "Resm-i Osmânî'de ٱلصَّلَوٰة yazımı"
+  },
+  {
+   "seviye": "orta",
+   "kelime": "زَكَاة",
+   "kok": "زكو",
+   "kuran": true,
+   "amac": "Resm-i Osmânî'de ٱلزَّكَوٰة yazımı"
+  },
+  {
+   "seviye": "orta",
+   "kelime": "تَوْبَة",
+   "kok": "توب",
+   "kuran": true,
+   "amac": "Ecvef vâvî + ta merbûta"
+  },
+  {
+   "seviye": "orta",
+   "kelime": "إِيمَان",
+   "kok": "أمن",
+   "kuran": true,
+   "amac": "Hemze-i kat'; if'âl mastarı; ءمن kök anahtarı"
+  },
+  {
+   "seviye": "orta",
+   "kelime": "مُؤْمِن",
+   "kok": "أمن",
+   "kuran": true,
+   "amac": "Vav üstünde hemze (ؤ) normalizasyonu"
+  },
+  {
+   "seviye": "orta",
+   "kelime": "سُؤَال",
+   "kok": "سأل",
+   "kuran": true,
+   "amac": "Orta harf hemze (mehmûzü'l-ayn)"
+  },
+  {
+   "seviye": "orta",
+   "kelime": "قَالَ",
+   "kok": "قول",
+   "kuran": true,
+   "amac": "En sık fiil; elif → vav kökü"
+  },
+  {
+   "seviye": "orta",
+   "kelime": "رَأَى",
+   "kok": "رأي",
+   "kuran": true,
+   "amac": "Hemze + elif maksûre birlikte"
+  },
+  {
+   "seviye": "orta",
+   "kelime": "ظُلْم",
+   "kok": "ظلم",
+   "kuran": true,
+   "amac": "Zıt anlam (adl) ilişkisi"
+  },
+  {
+   "seviye": "orta",
+   "kelime": "فِتْنَة",
+   "kok": "فتن",
+   "kuran": true,
+   "amac": "Çok anlamlılık (imtihan, azap, şirk)"
+  },
+  {
+   "seviye": "orta",
+   "kelime": "رِزْق",
+   "kok": "رزق",
+   "kuran": true,
+   "amac": "Sağlam kök; ism/mastar ayrımı"
+  },
+  {
+   "seviye": "zor",
+   "kelime": "إِحْسَان",
+   "kok": "حسن",
+   "kuran": true,
+   "amac": "If'âl babı; hadis-i Cibrîl ıstılahı"
+  },
+  {
+   "seviye": "zor",
+   "kelime": "اِسْتِغْفَار",
+   "kok": "غفر",
+   "kuran": true,
+   "amac": "İstif'âl babı; uzun önek soyma"
+  },
+  {
+   "seviye": "zor",
+   "kelime": "تَأْوِيل",
+   "kok": "أول",
+   "kuran": true,
+   "amac": "Tef'îl + hemze; tefsir usûlü ıstılahı"
+  },
+  {
+   "seviye": "zor",
+   "kelime": "مِيزَان",
+   "kok": "وزن",
+   "kuran": true,
+   "amac": "Misal kök; vav → ye dönüşümü"
+  },
+  {
+   "seviye": "zor",
+   "kelime": "شَفَاعَة",
+   "kok": "شفع",
+   "kuran": true,
+   "amac": "Kelâm ıstılahı; lügat anlamı 'çift'"
+  },
+  {
+   "seviye": "zor",
+   "kelime": "إِجْمَاع",
+   "kok": "جمع",
+   "kuran": false,
+   "amac": "Usûl ıstılahı; Kur'an'da bu formda yok"
+  },
+  {
+   "seviye": "zor",
+   "kelime": "قِيَاس",
+   "kok": "قيس",
+   "kuran": false,
+   "amac": "Usûl/mantık ıstılahı; Kur'an'da geçmez"
+  },
+  {
+   "seviye": "zor",
+   "kelime": "اِجْتِهَاد",
+   "kok": "جهد",
+   "kuran": false,
+   "amac": "İftiâl babı; cihâd ile aynı kök"
+  },
+  {
+   "seviye": "zor",
+   "kelime": "بِدْعَة",
+   "kok": "بدع",
+   "kuran": false,
+   "amac": "Hadis ıstılahı; Kur'an'da bedî' / bid'an formları"
+  },
+  {
+   "seviye": "zor",
+   "kelime": "نَسْخ",
+   "kok": "نسخ",
+   "kuran": false,
+   "amac": "Usûl ıstılahı (nâsih/mensûh); Kur'an'da mastar geçmez, yalnız fiil (نَنسَخْ) ve nüsha"
+  },
+  {
+   "seviye": "zor",
+   "kelime": "وِلَايَة",
+   "kok": "ولي",
+   "kuran": true,
+   "amac": "Lefîf-i makrûn kök; velâye/vilâye harekesi"
+  },
+  {
+   "seviye": "zor",
+   "kelime": "طَاغُوت",
+   "kok": "طغي",
+   "kuran": true,
+   "amac": "Kalb-i mekânî tartışmalı kelime"
+  },
+  {
+   "seviye": "cok_zor",
+   "kelime": "صَمَد",
+   "kok": "صمد",
+   "kuran": true,
+   "amac": "Tek geçiş (İhlâs); tefsirlerde ihtilaf"
+  },
+  {
+   "seviye": "cok_zor",
+   "kelime": "كَلَالَة",
+   "kok": "كلل",
+   "kuran": true,
+   "amac": "Garîb + fıkhî ıstılah (ferâiz); muzaaf kök"
+  },
+  {
+   "seviye": "cok_zor",
+   "kelime": "إِيلَاف",
+   "kok": "ألف",
+   "kuran": true,
+   "amac": "Kureyş sûresi; hemze + if'âl"
+  },
+  {
+   "seviye": "cok_zor",
+   "kelime": "سِجِّيل",
+   "kok": "سجل",
+   "kuran": true,
+   "amac": "Muarreb (Farsça asıllı) olduğu söylenen kelime"
+  },
+  {
+   "seviye": "cok_zor",
+   "kelime": "غِسْلِين",
+   "kok": "غسل",
+   "kuran": true,
+   "amac": "Tek geçiş (Hâkka); vezin tartışması"
+  },
+  {
+   "seviye": "cok_zor",
+   "kelime": "أَبّ",
+   "kok": "أبب",
+   "kuran": true,
+   "amac": "Hz. Ömer'in bilmediği rivayet edilen kelime; hemze + muzaaf"
+  },
+  {
+   "seviye": "cok_zor",
+   "kelime": "قَسْوَرَة",
+   "kok": "قسر",
+   "kuran": true,
+   "amac": "Tek geçiş (Müddessir); anlamında ihtilaf"
+  },
+  {
+   "seviye": "cok_zor",
+   "kelime": "رَقِيم",
+   "kok": "رقم",
+   "kuran": true,
+   "amac": "Ashâb-ı Kehf; özel isim mi levha mı"
+  },
+  {
+   "seviye": "cok_zor",
+   "kelime": "تَسْنِيم",
+   "kok": "سنم",
+   "kuran": true,
+   "amac": "Cennet pınarı; tek geçiş"
+  },
+  {
+   "seviye": "cok_zor",
+   "kelime": "مُدْهَامَّتَان",
+   "kok": "دهم",
+   "kuran": true,
+   "amac": "Tek kelimelik âyet; if'îlâl babı, tesniye"
+  },
+  {
+   "seviye": "cok_zor",
+   "kelime": "حَنِيذ",
+   "kok": "حنذ",
+   "kuran": true,
+   "amac": "Tek geçiş (Hûd); nadir kök"
+  },
+  {
+   "seviye": "cok_zor",
+   "kelime": "صَلْصَال",
+   "kok": "صلصل",
+   "kuran": true,
+   "amac": "Rubâî mudâaf kök; kaynaklar صلل/صلصل diye ayrışır"
+  }
+ ]
+}

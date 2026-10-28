@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lügat Portalı</title>
+  <meta name="description" content="Arapça kelime ve kök araması: klasik ve modern sözlükler, Türkçe karşılıklar, Kur'an'daki geçişler, eş ve zıt anlamlılar, aynı kökten türeyenler.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Amiri+Quran&family=Noto+Naskh+Arabic:wght@400;600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/app.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a5f'/%3E%3Ctext x='32' y='46' font-size='40' text-anchor='middle' fill='%23f6efe0' font-family='serif'%3E%D9%84%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip" href="#main">İçeriğe geç</a>
+  <header class="top">
+    <div class="wrap top-row">
+      <a href="/" class="brand" data-link><span class="brand-mark" lang="ar">ل</span><span class="brand-name">Lügat Portalı</span></a>
+      <nav class="nav" aria-label="Ana menü">
+        <a href="/" data-link>Arama</a>
+        <a href="/favoriler" data-link>Favoriler <span id="fav-count" class="pill" hidden></span></a>
+        <a href="/rehber" data-link>Sözlük Rehberi</a>
+        <a href="/hakkinda" data-link>Kaynaklar</a>
+      </nav>
+    </div>
+    <form id="search" class="wrap search" role="search" autocomplete="off">
+      <label for="q" class="sr-only">Arapça kelime veya kök</label>
+      <div class="search-box">
+        <input id="q" name="q" dir="auto" lang="ar" placeholder="كتاب · ك ت ب · kitâb" spellcheck="false" aria-describedby="search-hint">
+        <button type="button" id="kbd-toggle" class="icon-btn" aria-expanded="false" aria-controls="kbd" title="Arapça klavye">⌨</button>
+        <button type="submit" class="primary">Ara</button>
+      </div>
+      <ul id="suggest" class="suggest" role="listbox" hidden></ul>
+      <p id="search-hint" class="hint">Arapça kelime, kök (ك ت ب) veya Latin harfli yazım (ktb, kitâb, raHma) girin. Hareke, hemze ve elif maksûre farkları aramayı engellemez.</p>
+      <div id="kbd" class="kbd" hidden></div>
+    </form>
+  </header>
+
+  <main id="main" class="wrap" tabindex="-1"></main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>Ücretsiz ve ticari olmayan bir kamu hizmetidir. Veriler açık lisanslı kaynaklardan derlenir; her kayıt kaynaklar arasında karşılaştırılıp elle onaylandıktan sonra yayımlanır. Telifli sözlüklere yalnızca bağlantı verilir.</p>
+      <p>Kur'an morfolojisi: <a href="https://corpus.quran.com" rel="noopener">Quranic Arabic Corpus</a> (GNU GPL) · Ayrıntılı atıflar: <a href="/hakkinda" data-link>Kaynaklar ve lisanslar</a></p>
+    </div>
+  </footer>
+
+  <dialog id="report-dlg">
+    <form method="dialog" id="report-form">
+      <h2>Hata bildir</h2>
+      <p class="muted" id="report-target"></p>
+      <label for="report-msg">Ne yanlış? (Kaynak gösterebilirseniz çok iyi olur.)</label>
+      <textarea id="report-msg" rows="5" minlength="5" maxlength="2000" required></textarea>
+      <div class="row-end">
+        <button value="cancel" formnovalidate>Vazgeç</button>
+        <button value="send" class="primary">Gönder</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="print-area" aria-hidden="true"></div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

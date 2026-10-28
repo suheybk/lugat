@@ -1,0 +1,13 @@
+[
+  {"code":"almaany_tr","name":"Almaany (Arapça–Türkçe)","description":"Modern Türkçe karşılıklar, çok sözlük","url_template":"https://www.almaany.com/ar/dict/ar-tr/{w}/","scope":"word"},
+  {"code":"almaany_ar","name":"Almaany (Arapça–Arapça)","description":"Vasît, Ganî, Râid, Muâsıra","url_template":"https://www.almaany.com/ar/dict/ar-ar/{w}/","scope":"word"},
+  {"code":"hawramani","name":"Arabic Lexicon (Hawramani)","description":"50+ klasik sözlükte aynı anda: Tâc, Lisân, Kâmûs, Lane, Dozy, Müfredât, Ta'rîfât","url_template":"https://arabiclexicon.hawramani.com/search/{w}","scope":"word"},
+  {"code":"ejtaal","name":"Ejtaal Arabic Almanac","description":"Hans Wehr, Lane, Lisân, Müncid, Ayn, Mekâyîs sayfa taramaları","url_template":"https://ejtaal.net/aa/#q={r}","scope":"root"},
+  {"code":"shamela","name":"Mektebe-i Şâmile","description":"Tam metin arama, cilt/sayfa atfı","url_template":"https://shamela.ws/search?q={w}","scope":"word"},
+  {"code":"birzeit","name":"Birzeit Ontology / Lexicon","description":"150 sözlük + Arabic Ontology","url_template":"https://ontology.birzeit.edu/search?q={w}","scope":"word"},
+  {"code":"qac","name":"Quranic Arabic Corpus","description":"Kök sayfası, geçişler, morfoloji","url_template":"https://corpus.quran.com/qurandictionary.jsp?q={r_bw}","scope":"root"},
+  {"code":"lugatim","name":"Kubbealtı Lugatı","description":"Osmanlı/Türkçe'deki kullanım","url_template":"https://lugatim.com/s/{w_latin}","scope":"word"},
+  {"code":"tdv","name":"TDV İslâm Ansiklopedisi","description":"Istılah ve kavram maddeleri","url_template":"https://islamansiklopedisi.org.tr/arama?q={w_latin}","scope":"word"},
+  {"code":"wiktionary","name":"Wiktionary (Arapça)","description":"Etimoloji, çeviriler","url_template":"https://en.wiktionary.org/wiki/{w}#Arabic","scope":"word"},
+  {"code":"lane","name":"Lane's Lexicon (HTML)","description":"Kök bazlı Lane maddesi (kök menüsünden)","url_template":"https://lexicon.quranic-research.net/","scope":"root"}
+]

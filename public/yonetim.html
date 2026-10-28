@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Yönetim — Lügat Portalı</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/app.css">
+  <style>
+    .grid { display: grid; gap: 14px; }
+    .counts { display: flex; flex-wrap: wrap; gap: 6px; }
+    .counts span { background: var(--bg); border-radius: 6px; padding: 2px 8px; font-size: .85rem; }
+    .item-actions { white-space: nowrap; }
+    .item-actions button { margin-left: 4px; }
+    tr.done { opacity: .45; }
+    .body-preview { max-width: 520px; max-height: 6.5em; overflow: hidden; }
+    .tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+  <header class="top"><div class="wrap top-row">
+    <a href="/" class="brand"><span class="brand-mark" lang="ar">ل</span><span class="brand-name">Lügat Portalı · Yönetim</span></a>
+    <nav class="nav"><a href="#" id="logout">Çıkış</a></nav>
+  </div></header>
+  <main class="wrap" id="app"></main>
+  <script src="/yonetim.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  // Lügat Portalı — Cloudflare Worker + D1 + statik dosyalar
+  // Kurulum adımları: docs/YAYIN.md
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lugat-portali",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "lugat",
+      // `npx wrangler d1 create lugat` çıktısındaki database_id buraya yazılır
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+  // Alan adı: Cloudflare'de DNS'i yönetilen alan adınızı yazın, yorumu kaldırın.
+  // "routes": [{ "pattern": "lugat.ORNEK.org", "custom_domain": true }],
+  "triggers": { "crons": ["17 3 1 * *"] },
+  "vars": { "SITE_NAME": "Lügat Portalı" },
+  "observability": { "enabled": true }
+}

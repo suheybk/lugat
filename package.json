@@ -1,0 +1,27 @@
+{
+  "name": "lugat-portali",
+  "version": "1.0.0",
+  "description": "Arapça sözlük portalı (Cloudflare Workers + D1)",
+  "scripts": {
+    "dev": "wrangler dev",
+    "test": "vitest run && python3 -I etl/test_normalize.py",
+    "typecheck": "tsc",
+    "deploy": "wrangler deploy",
+    "db:migrate:local": "wrangler d1 migrations apply lugat --local",
+    "db:migrate": "wrangler d1 migrations apply lugat --remote"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "hono": "^4.13.14"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261028.1",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5",
+    "wrangler": "^4.155.0"
+  },
+  "private": true,
+  "type": "module"
+}
