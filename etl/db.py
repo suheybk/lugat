@@ -1,5 +1,7 @@
 """Yerel lexicon.db (SQLite) yardımcıları. Şema migrations/ klasöründen uygulanır,
 böylece yerel dosya ile D1 aynı yapıdadır."""
+from __future__ import annotations
+
 import json
 import re
 import sqlite3

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Lügat Portalı'nı sozluk.suheybk.com adresine kurar. Tekrar çalıştırmak güvenlidir.
 # Kullanım (depo klasöründe):  bash scripts/yayinla.sh
-# Gerekenler: Node 18+, Python 3.10+, git. Cloudflare girişi için tarayıcı açılır.
+# Gerekenler: Node 18+, Python 3.9+, git. Cloudflare girişi için tarayıcı açılır.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
