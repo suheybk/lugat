@@ -20,8 +20,8 @@
       "migrations_dir": "migrations"
     }
   ],
-  // Alan adı: Cloudflare'de DNS'i yönetilen alan adınızı yazın, yorumu kaldırın.
-  // "routes": [{ "pattern": "lugat.ORNEK.org", "custom_domain": true }],
+  // Alan adı: suheybk.com Cloudflare'de; deploy sırasında sozluk.suheybk.com DNS kaydı otomatik açılır.
+  "routes": [{ "pattern": "sozluk.suheybk.com", "custom_domain": true }],
   "triggers": { "crons": ["17 3 1 * *"] },
   "vars": { "SITE_NAME": "Lügat Portalı" },
   "observability": { "enabled": true }

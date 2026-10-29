@@ -4,3 +4,4 @@ node_modules/
 etl/out/
 __pycache__/
 *.pyc
+.admin-token

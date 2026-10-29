@@ -1,5 +1,17 @@
 # Yayına alma (alan adı + Cloudflare)
 
+## Tek komut (sozluk.suheybk.com)
+
+```bash
+git clone https://github.com/suheybk/lugat && cd lugat && bash scripts/yayinla.sh
+```
+
+Betik sırayla: paketleri kurar, Cloudflare girişi için tarayıcıyı açar, D1 veritabanını oluşturup
+`wrangler.jsonc`'ye yazar, şemayı uygular, siteyi yayınlar (DNS kaydı otomatik açılır), yönetici
+anahtarı üretir, Kur'an + Arramooz verisini hazırlayıp yükler. Size yalnızca onay soruları kalır.
+
+## Elle kurulum
+
 Bir kere yapılır; sonra her güncelleme `npm run deploy`.
 
 1. **Giriş:** `npx wrangler login` (DİDA'nın Cloudflare hesabıyla).
