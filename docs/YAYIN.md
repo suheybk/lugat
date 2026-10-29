@@ -2,6 +2,12 @@
 
 ## Tek komut (sozluk.suheybk.com)
 
+Windows (PowerShell):
+```powershell
+git clone https://github.com/suheybk/lugat; cd lugat; powershell -ExecutionPolicy Bypass -File scripts\yayinla.ps1
+```
+
+macOS / Linux:
 ```bash
 git clone https://github.com/suheybk/lugat && cd lugat && bash scripts/yayinla.sh
 ```
