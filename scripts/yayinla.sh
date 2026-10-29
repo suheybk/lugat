@@ -11,12 +11,19 @@ say "1/7 Paketler kuruluyor"
 npm ci --no-audit --no-fund
 
 say "2/7 Cloudflare girişi"
+unset CLOUDFLARE_API_TOKEN
 npx wrangler whoami 2>/dev/null | grep -qi "logged in" || npx wrangler login
+if ! npx wrangler d1 list --json >/dev/null 2>&1; then
+  echo "D1'e erişilemedi; Cloudflare girişi yenileniyor..."
+  npx wrangler logout >/dev/null || true
+  npx wrangler login
+  npx wrangler d1 list --json >/dev/null || { echo "Cloudflare D1 izni vermiyor: hesap/rol kontrol edin."; exit 1; }
+fi
 
 say "3/7 D1 veritabanı (lugat)"
 if grep -q '00000000-0000-0000-0000-000000000000' wrangler.jsonc; then
   npx wrangler d1 list --json | python3 -c 'import json,sys; sys.exit(0 if any(d["name"]=="lugat" for d in json.load(sys.stdin)) else 1)' \
-    || npx wrangler d1 create lugat
+    || npx wrangler d1 create lugat --location eeur --no-update-config
   DB_ID=$(npx wrangler d1 list --json | python3 -c 'import json,sys; print(next(d["uuid"] for d in json.load(sys.stdin) if d["name"]=="lugat"))')
   python3 - "$DB_ID" <<'PY'
 import pathlib, sys
